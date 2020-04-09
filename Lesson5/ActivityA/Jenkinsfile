@@ -3,6 +3,7 @@ node {
 
     stage("Fetch Source Code") {
         git "https://github.com/Truper4/Beginning-Jenkins.git"
+	sh 'apk add make python pip'
     }
 
     dir('Lesson5/ActivityA') {
